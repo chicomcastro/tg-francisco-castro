@@ -1,6 +1,6 @@
 # Proposta de TG
 
-# Informações primárias
+## Informações primárias
 
 I. nome(s) do(s) Orientador(es): Maisa de Oliveira Terra
 
@@ -8,7 +8,7 @@ Aluno: Francisco Matheus Moreira de Castro
 
 II. título do TG:
 
-Estudo de Otimização de Parâmetros em Transferências Terra-Marte com Swing-by Propulsado por Vênus 
+Estudo de Otimização de Parâmetros em Transferências Terra-Marte com Swing-by Propulsado por Vênus
 
 ## Proposta
 
@@ -16,7 +16,7 @@ Este Trabalho de Graduação objetiva estudar a Otimização de Parâmetros em P
 
 Castro et al. (2019) estudaram o projeto de transferências Terra-Marte a partir da modelagem de cônicas acopladas e aplicação de algoritmo evolutivo para obtenção de soluções ótimas, visando minimizar custo total da missão.
 
-Recentemente, Terra e Prado (2019) investigaram o papel do campo gravitacional de Júpiter em Transferências Terra-Marte (EMT) com a inclusão de uma manobra de Swing-by por Vênus, explorando soluções do Problema Restrito de Três Corpos. Esta análise mostrou que, em geral, após a passagem por Vênus a espaçonave se aproxima da  esfera de influência de Marte com uma velocidade muito mais elevada que a velocidade orbital de Marte, implicando num custo maior desta missão em relação à uma EMT direta. Porém, mostra-se que uma economia de custo de até 6% é possível através da escolha adequada da fase entre Sol e Júpiter no instante inicial da trajetória de transferência. 
+Recentemente, Terra e Prado (2019) investigaram o papel do campo gravitacional de Júpiter em Transferências Terra-Marte (EMT) com a inclusão de uma manobra de Swing-by por Vênus, explorando soluções do Problema Restrito de Três Corpos. Esta análise mostrou que, em geral, após a passagem por Vênus a espaçonave se aproxima da  esfera de influência de Marte com uma velocidade muito mais elevada que a velocidade orbital de Marte, implicando num custo maior desta missão em relação à uma EMT direta. Porém, mostra-se que uma economia de custo de até 6% é possível através da escolha adequada da fase entre Sol e Júpiter no instante inicial da trajetória de transferência.
 
 Por outro lado, Ferreira (2017) explorou como uma manobra de Swing-by com aplicação de  impulso de módulo e direção variáveis em um ponto arbitrário na passagem pelo primário pode otimizar o ganho ou perda de energia do veículo espacial, mostrando inclusive que resultados melhores do que aqueles obtidos com o impulso aplicado no periapsis podem ser obtidos.
 
