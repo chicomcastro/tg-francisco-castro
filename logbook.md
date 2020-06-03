@@ -13,3 +13,10 @@ This file describes what was done in each stage of development
 - Installed required packages to start developing. They should be found in [requirements][./requirements].
 - Reproduced example of numeric integration using ode lib from [here][https://ode-solver.readthedocs.io/en/master/double-pendulum-example.html]
 - Made some charge test to evaluate spent time for different ode solvers, from scipy
+
+## Jun 03, 2020
+
+- Documented how to quickly activate venv
+- Remove ./src/playground from .gitgnore to disponibilize initial python test with integrators and integrations
+- Started reproducing results from [here][https://www.ime.usp.br/~fabcm/files/apresentacao_3corpos.pdf]
+
