@@ -20,3 +20,6 @@ This file describes what was done in each stage of development
 - Remove ./src/playground from .gitgnore to disponibilize initial python test with integrators and integrations
 - Started reproducing results from [here][https://www.ime.usp.br/~fabcm/files/apresentacao_3corpos.pdf]
 
+## Jun 05, 2020
+
+- Initiated studying more mathematical approach and dedution for physic model of (C)RTBP from [here][http://cosweb1.fau.edu/~jmirelesjames/hw4Notes.pdf]
