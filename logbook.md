@@ -22,4 +22,12 @@ This file describes what was done in each stage of development
 
 ## Jun 05, 2020
 
-- Initiated studying more mathematical approach and dedution for physic model of (C)RTBP from [here][http://cosweb1.fau.edu/~jmirelesjames/hw4Notes.pdf]
+- Initiated studying a more mathematical approach and dedution for physic modelling of (C)RTBP from [here][http://cosweb1.fau.edu/~jmirelesjames/hw4Notes.pdf]
+
+## Jun 10, 2020
+
+- Meeting with Maísa and Bertachini. We've decided to follow the patched conics approach initially to garantee optimized and fast results until we have a solid approach for numerical paching for our planned swing by through Venus
+
+## Jun 11, 2020
+
+- Trying implementing CRTBP on Python and Matlab. Have success in matlab, python needs some more improvements.

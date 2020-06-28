@@ -1,0 +1,64 @@
+Olá Francisco, tudo bem?
+
+Desculpe a demora em te enviar os códigos do programa, conforme prometido.
+
+Estou te enviando um código de cálculo do caso de Transferência Terra-Marte direto, ou seja, 
+sem passagem (swing-by) por Venus. O modelo matemático é o Problema Restrito de Três Corpos Circular Planar
+com os dois primários sendo o Sol e Júpiter. O objetivo dessa análise era justamente verificar o papel de Júpiter nesta 
+transferência direta e conforme relatado no paper do IAC2019, o efeito da massa de Júpiter é muito tênue. 
+Ou seja, menores custo não dependem da posição de Júpiter, mas precisamente do ângulo entre as linhas Sol-Júpiter e Sol-Terra.
+
+Te envio este código primeiramente, pois ele é mais simples que o com Swing-by por Vênus, e ajuda a entender a matemática 
+que envolve usar o PR3C, por exemplo. (adimensionalização das variáveis, transformações do referencial heliocêntrico inercial para o
+baricêntrico girante, verificação da conservação da constante de Jacobi, etc)
+
+O programa está escrito em fortran 77. Sobre a sintaxe do fortran 77: os comandos devem estar entre a coluna 7 e 72 para 
+que o compilador interprete, caracteres após a coluna 72 são desprezados como comando e servem apenas para comentários.
+
+Na primeira coluna, um caracter  c ou C ou ! significa que a linha toda é um comentário. 
+Números nas colunas 1 a 5 representam labels das linhas
+Em uma linha de comando, tudo o que vem após um ponto de exclamação ! é comentário.
+
+Para compilar em ambiente Linux usando o compilador nativo que é muito bom pode-se usar o comando de linha em um terminal:
+
+gfortran -o <nome_arquivo_executavel>    <arquivos.f>
+
+O programa que te envio aqui está dividido em vários arquivos (cinco arquivos)
+ 5.s_rkf78.f
+ p_evolui_Terra.f
+ s_bissecao.f
+ s_evolucao.f
+ s_flyby.f
+porque eu acho esta forma mais simples para programar e editar. 
+Este código  pode ser compilado em ambiente Linux pelo comando de linha:
+
+gfortran -o p.e  p_evolui_Terra.f  s_bissecao.f  s_evolucao.f  s_flyby.f  5.s_rkf78.f
+
+Para facilitar, geralmente  eu deixo os arquivos do tipo .f em um diretório isolado e uso simplesmente:
+
+gfortran -o p.e  *.f 
+
+A opção -o p.e é para dizer que o executável gerado deve estar no arquivo de saída p.e. Se vc não usar isso, o defult é ele
+escrever em um arquivo de nome a.out 
+
+Depois te escrevo descrevendo melhor o programa, ok? Abaixo, tem uma descrição sucinta do conteúdo dos arquivos.
+Este código leva bastante tempo para executar, pois ele varre 16 ângulos de Júpiter
+
+Se precisar, dê um alo por email ou por whatsapp, o que for melhor  para vc.
+
+Amanhã (hoje depois que eu acordar, rsrsrsr)  vou tentar limpar o código que calcula a transferência Terra-Marte com Swing-by por Vênus, mas não sei que 
+hora terei disponibilidade, ok?
+
+Abs,
+Maisa
+
+PS1: Para minha referencia futura, tirei esses arquivos de:
+/home/maisa/Notebook_ASUS1/0.0.Projeto_Terra_Marte_FB_Venus/7.DirectTransfer_EM_noSB/Varia_Phi_SJ/Versao_para_Francisco
+
+PS2: Estrutura do Programa ao longo dos arquivos:
+
+p_evolui_Terra.f  (Contém o programa principal, duas subrotinas de transformação de coordenadas e uma função de cálculo da Constante de Jacobi)
+s_evolucao.f       (Contém subrotinas que controlam e analisam a evolução temporal) 
+s_bissecao.f      (subrotina que utiliza método de bisseção para calcular interseção da trajetória da espaçonave com a órbita circular de Marte em torno do Sol
+s_flyby.f           (arquivo de rotinas escritas para flyby por Venus adaptadas para cálculo na chegada à Marte: mudança de referencial, delta V,..., portanto onde se lê Venus, neste caso se refere a Marte) 
+5.s_rkf78.f        (subrotina de integração numérica de EDOs que utiliza método de Runge-Kutta de 7ª e 8ª ordem, com passo variável)
