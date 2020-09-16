@@ -1,0 +1,3 @@
+[submodule "src/optimized-Earth-Mars-transfer"]
+	path = src/optimized-Earth-Mars-transfer
+	url = https://github.com/chicomcastro/optimized-Earth-Mars-transfer
